@@ -46,7 +46,7 @@ class App extends Component {
 
   addBookmark = (bookmark) => {
     this.setState({
-      bookmarks: [ ...this.state.bookmarks, bookmark ],
+      bookmarks: [...this.state.bookmarks, bookmark],
     })
   }
 
@@ -57,7 +57,7 @@ class App extends Component {
     this.setState({
       bookmarks: newBookmarks
     })
-  }    
+  }
 
   componentDidMount() {
     fetch(config.API_ENDPOINT, {
@@ -82,7 +82,7 @@ class App extends Component {
       bookmarks: this.state.bookmarks,
       addBookmark: this.addBookmark, // referring to the method above
       deleteBookmark: this.deleteBookmark
-    }      
+    }
     return (
       <main className='App'>
         <h1>Bookmarks!</h1>
