@@ -79,7 +79,7 @@ export default function BookmarkItem(props) {
   description: PropTypes.string
 }; */
 
-Bookmark.propTypes = {
+BookmarkItem.propTypes = {
   title: PropTypes.string.isRequired,
   url: (props, propName, componentName) => {
     // get the value of the prop
