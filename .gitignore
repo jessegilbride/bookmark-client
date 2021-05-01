@@ -10,6 +10,9 @@
 
 # production
 /build
+/.vercel
+.vercel/
+.vercel
 
 # misc
 .DS_Store
@@ -24,5 +27,11 @@ yarn-error.log*
 
 /documents
 
+.env
+.env.local
 
-.vercel
+package-lock.json
+yarn.lock
+
+vercel.json
+
